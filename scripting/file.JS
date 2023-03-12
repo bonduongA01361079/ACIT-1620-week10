@@ -4,5 +4,5 @@ const courseList = [
     { code: "ACIT 1420", name: "Intro to System Administration"}
 ];
 
-let user = prompt("Please enter a 4-digit number: ");
+let user = prompt("Please enter 4-digit number: ");
 
