@@ -12,9 +12,11 @@ while(user.length !== 4 || isNaN(user)) {
 
 for (let item of courseList) {
     if(item.code == `ACIT ${user}`) {
-    console.log(`Yes I am taking the course: ${item.code} - ${item.name}`)
+    console.log(`Yes I am taking the course: ${item.code} - ${item.name}`);
     break;
-    } else { item.code !=
-
+    } else {
+        item.code != courseList;
+        courseList.push({code: `ACIT ${user}`, name: null});
+        console.log(`Added successfully new course ACIT ${user}`)
     }
 }
