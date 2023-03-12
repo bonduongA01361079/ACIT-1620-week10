@@ -10,12 +10,15 @@ while(user.length !== 4 || isNaN(user)) {
     user = prompt("Invalid data. Please enter 4-digit number (eg. 1620): ");
 }
 
+let isCourse = false; 
+
 for (let item of courseList) {
     if(item.code == `ACIT ${user}`) {
     console.log(`Yes I am taking the course: ${item.code} - ${item.name}`);
-    } else {
-        item.code != courseList;
-        courseList.push({code: `ACIT ${user}`, name: null});
-        console.log(`Added successfully new course ACIT ${user}`)
+    break;
     }
-}
+};
+    if(!isCourse) {
+        courseList.push({code: `ACIT${user}`, name: null});
+        console.log(`Added successfully a new course ACIT ${user}`)
+    } 
