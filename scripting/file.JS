@@ -6,3 +6,6 @@ const courseList = [
 
 let user = prompt("Please enter 4-digit number: ");
 
+while(user.length !== 4 || isNaN(user)) {
+    user = prompt("Invalid data. Please enter 4-digit number: ");
+}
